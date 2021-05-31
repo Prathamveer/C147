@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sky
+          src="sky.jpg"
+        ></a-sky>
+
+        <a-plane src="floor.jpg" position="0 0 0" rotation="-90 0 0" width="20" height="10"
+        ></a-plane>
+
+        <a-plane src="carpet.jpg" position="0 0.1 0.5" rotation="-90 0 0" width="8" height="5"
+        ></a-plane>
+
+        <a-box src="wall.jpg" position="0 6.5 -4.5" width="20" height="13"
+        ></a-box>
+
+        <a-plane src="painting1.jpg" position="-5 6 -3.3" rotation="0 0 0" width="4" height="6"
+        ></a-plane>
+
+        <a-plane src="painting2.jpg" position="0 6 -3.3"rotation="0 0 0" width="4" height="6"
+        ></a-plane>
+
+        <a-plane src="painting1.jpg" position="5 6 -3.3" rotation="0 0 0" width="4" height="6"
+        ></a-plane>
+
+        <a-cylinder src="chair.png" radius="1.2" position="6.5 -0.4 0">
+            <a-cylinder src="chair.png" radius="0.2" position="0 1 0" height="1.2">
+            </a-cylinder>
+            <a-cylinder src="chair.png" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2">
+            </a-cylinder>
+            <a-cylinder src="chair.png" position="0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2">
+            </a-cylinder>
+        </a-cylinder>
+
+        <a-cylinder src="chair.png" radius="1.2" position="-6.5 -0.4 0">
+            <a-cylinder src="chair.png" radius="0.2" position="0 1 0" height="1.2">
+            </a-cylinder>
+            <a-cylinder src="chair.png" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2">
+            </a-cylinder>
+            <a-cylinder src="chair.png" position="-0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2">
+            </a-cylinder>
+        </a-cylinder>
+
+        <a-box src="table.png" width="9" height="3.5" position="0 2 0" rotation="90 0 0" depth="0.2">
+            <a-cylinder src="table.png" height="2" radius="0.8" rotation="90 0 0" position="0 0 1">
+            </a-cylinder>
+        </a-box>
+
+        <a-cone color="pink" position="0 7.5 0" radius-top="0.5" radius-bottom="2">
+            <a-sphere color="#fff176" position="0 -0.5 0"></a-sphere>
+            <a-cylinder color="pink" radius="0.15" height="4" position="0 2 0">
+            </a-cylinder>
+        </a-cone>
+
+        <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15">
+        </a-camera>
+    </a-scene>
+</body>
+</html>
